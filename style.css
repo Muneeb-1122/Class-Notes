@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Montserrat', Arial, sans-serif;
+    src: url(./Fonts/Montserrat/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins' ;
+    src: url(./Fonts/Poppins/Poppins-Thin.ttf);
+    font-weight: 100;
+}
+
+:root {
+    --background: #fafafa;
+    --rect-background: #fff;
+    --text: #333;
+    --border: #d7d7d7;
+    --border-radius: 0.572rem;
+    --gap: 0.375rem;
+    --main: 'Montserrat', Arial, sans-serif;
+    --text: 'Poppins';
+    --font-width-1: 100;
+    --font-width-2: 200;
+    --font-width-3: 300;
+    --font-width-4: 500;
+    --font-width-5: 600;
+    --font-width-6: 700;
+    /* --main-font: 15px; */
+    --main-font: 0.9375rem;
+    /* --text-font: 12px; */
+    --text-font: 0.75rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* dark mode user-agent-styles */
+/* improves punctuation in supported browsers */
+html {
+  /* color-scheme: dark light; */
+    hanging-punctuation: first last;
+}
+
+/* min body height */
+body {
+    min-height: 100svh; /* Full height of the smallest viewport */
+    background-color: var(--background);
+    padding: .4rem;
+    overflow: hidden
+}
+
+main {
+    display: flex;
+    gap: var(--gap);
+}
+
+#left {
+    /* width: 14%; */
+    width: clamp(12%, 14%, 16%);
+    height: 98svh;
+}
+
+#right {
+    /* width: 86%; */
+    width: clamp(80%, 86%, 90%);
+    height: 98svh;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+#nav {
+    width: 100%;
+    height: 7svh;
+}
+
+#view-courses {
+    width: 100%;
+    height: 50svh;
+    display: flex;
+    gap: var(--gap);
+}
+
+#view {
+    width: 65%;
+    height: 100%;
+}
+
+#courses {
+    width: 35%;
+    height: 100%;
+}
+
+#btm-container {
+    width: 100%;
+    height: 43svh;
+    display: flex;
+    gap: var(--gap);
+}
+
+#cont {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+#comments {
+    width: 35%;
+    height: 100%;
+}
+#comp-tips {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    gap: var(--gap);
+}
+
+#comp {
+    width: 50%;
+    height: 100%;
+}
+
+#tips {
+    width: 50%;
+    height: 100%;
+}
+
+#info {
+    width: 100%;
+    height: 35%;
+}
+
+#left, #nav, #view, #courses, #comments, #comp, #tips, #info {
+    background-color: var(--rect-background);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+}
