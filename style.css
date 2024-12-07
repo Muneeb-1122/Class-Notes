@@ -1,3 +1,5 @@
+/* I can the box shadow of the rectangle */
+
 @font-face {
     font-family: 'Montserrat', Arial, sans-serif;
     src: url(./Fonts/Montserrat/Montserrat/Montserrat-VariableFont_wght.ttf);
@@ -12,8 +14,9 @@
 :root {
     --background: #fafafa;
     --rect-background: #fff;
-    --text: #333;
+    --text-color: #333;
     --border: #d7d7d7;
+    --hover: #0090FF;
     --border-radius: 0.572rem;
     --gap: 0.375rem;
     --main: 'Montserrat', Arial, sans-serif;
@@ -64,8 +67,8 @@ main {
 
 #left {
     /* width: 14%; */
-    width: clamp(12%, 14%, 16%);
-    height: 98svh;
+    width: clamp(12%, 14%, 16%); 
+    height: 98svh; 
 }
 
 #right {
@@ -142,7 +145,7 @@ main {
 
 #left, #nav, #view, #courses, #comments, #comp, #tips, #info {
     background-color: var(--rect-background);
-    border: 1px solid var(--border);
+    border: 1px solid var(--border);    
     border-radius: var(--border-radius);    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
